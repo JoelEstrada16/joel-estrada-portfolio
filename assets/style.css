@@ -1,0 +1,74 @@
+section {
+    display:flex;
+    margin:20px, 0 ,20px, 0;
+}
+a:link{
+    text-decoration: none;
+}
+
+.underline {
+    border-bottom: 3px solid darkcyan;
+    padding-bottom: 3px;
+}
+section header {
+    flex-basis:25%;
+    border-right: black solid;
+    margin-right: 30px;
+    text-align:right;
+    padding:20px;
+    text-decoration: double;
+    color: darkcyan;
+    font-size:x-large;
+}
+
+section nav {
+    flex-basis:75%;
+    color: darkcyan;
+    border: 5px;
+}
+
+.name{
+   font-size: xx-large;
+   background-color: black;
+}
+
+#links{
+    display: flex;
+    padding:2%;
+    position:relative;
+    left: 400px;
+}
+
+#links a{
+    flex-basis:auto;
+    padding:4% 4% 4% 4% ;
+}
+
+
+#my-work {
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+#my-work a{
+    flex-basis:50%;
+    height: 100px;
+}
+
+#my-work a:first-child{
+    flex-basis:100%;
+    height:200px;
+}
+
+#contact {
+    display:flex;
+}
+
+#contact a{
+    flex-basis: 20%;
+    text-align:center;
+    padding: 5% 0% 10% 0%;
+    color: darkcyan;
+    
+}
