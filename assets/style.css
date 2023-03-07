@@ -3,10 +3,16 @@ body {
 }
 section {
     display:flex;
-    margin: 20px, 0 ,20px, 0;
+    margin: 20px, 0, 20 ,0
 }
 a:link{
     text-decoration: none;
+}
+
+#mepicture{
+    max-width: 20%;
+    border:solid black 4px;
+    margin-bottom: 30px;
 }
 
 #horiseon:hover{
@@ -80,7 +86,7 @@ section nav {
    background-color: rgb(255, 232, 232);
    text-align:center;
    text-indent:40%;
-   margin: 30px 500px 30px -5px;
+   margin: 30px 110px 30px -5px;
    position: relative;
    
 }
@@ -93,7 +99,7 @@ section nav {
 
 #links a{
     flex-basis:auto;
-    padding:4% 4% 4% 4% ;
+    padding:0% 4% 4% 4% ;
     color: darkcyan;
     position: relative;
 }
@@ -107,19 +113,9 @@ section nav {
 
 #my-work a{
     height: 100px;
-    padding: 50px 0px 30px 0px
+    padding: 50px 85px 30px 0px
 }
 
-#header{
-    color: darkcyan;
-    margin-top: 460px;
-    margin-right: 1200px;
-    padding: 2px 20px .6px 10px;
-    font-weight: bolder;
-    font-size: xx-large;
-    background-color: lightpink;
-   
-}
 
 #horiseon{
     height:400px;
@@ -130,6 +126,16 @@ section nav {
     background-position: center;
     overflow: hidden;
     border: solid black 4px;
+}
+#header{
+    color: darkcyan;
+    margin-top: 460px;
+    margin-right: 669px;
+    padding: 2px 20px .6px 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: lightpink;
+   
 }
 
 
@@ -148,29 +154,16 @@ section nav {
     font-weight: bolder;
 }
 
-#pre{
+#project{
     background-color: lightpink;
     margin-top:37px;
     margin-right: 337px;
     text-align: right;
 }
 
-#project{
-    background-color: lightpink;
-    margin-top:37px;
-    margin-right:470px;
-    text-align: right;
-    padding-right: 1px;
-}
-
-#pre p {
+#project p {
     padding:20px 14px 10px 0px
 }
-
-#project p {
-    padding:15px 30px 15px 0px
-}
-
 
 #contact {
     display:flex;
@@ -181,5 +174,39 @@ section nav {
     text-align:center;
     padding: 5% 0% 0% 0%;
     color: darkcyan;
+    
+}
+
+
+@media screen and (min-width: 600px){
+    main{
+        display:block;
+    }
+    body>nav {
+        display: inline;
+        flex-direction: column;
+    }   
+        
+}
+
+@media screen and (max-width:700px) {
+    main{
+        display:block;
+        flex-basis: 33%;
+    }
+    #links{
+        display: block;
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        display: block;
+        flex-basis: 33%;
+    }
+    title{
+        display: none;
+    }
     
 }
