@@ -7,3 +7,8 @@
   Top links you will fidn will bring you to each topic on the page except for the resume I gotaa build one for that one and each picture has a link attached to it as well for future projects to come.
 
   ![joel-estrtada-portfolio](assets/imgs/_Users_joeljazzhands_Desktop_joel-estrada-portfolio_index.html.png)
+
+  ## Link
+https://joelestrada16.github.io/joel-estrada-portfolio/
+  ## License
+  Please refer to the license in the repo
