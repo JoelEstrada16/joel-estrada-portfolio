@@ -1,15 +1,50 @@
+body {
+    background-image: linear-gradient( rgb(226, 226, 255), rgb(249, 137, 249));
+}
 section {
     display:flex;
-    margin:20px, 0 ,20px, 0;
+    margin: 20px, 0 ,20px, 0;
 }
 a:link{
     text-decoration: none;
 }
 
-.underline {
-    border-bottom: 3px solid darkcyan;
-    padding-bottom: 3px;
+#horiseon:hover{
+    opacity: .7;
+    transition: all .3s ease-in-out;
+    
 }
+
+#work:hover{
+    opacity: .7;
+    transition: all .3s ease-in-out;
+    
+}
+
+
+#effect {
+    text-decoration: none;
+    position: relative;
+}
+
+#effect::before{
+    content:'';
+    background-color: black;
+    position: absolute;
+    left:0;
+    bottom:-3px;
+    width:100%;
+    height:5px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+#effect:hover::before{
+    bottom:0;
+    height:100%
+
+}
+
 section header {
     flex-basis:25%;
     border-right: black solid;
@@ -23,43 +58,119 @@ section header {
 
 section nav {
     flex-basis:75%;
-    color: darkcyan;
-    border: 5px;
+    color:darkcyan;
+}
+
+.top{
+    overflow:hidden;
+    position: relative;
+}
+
+.background{
+    opacity: .2;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: auto;
 }
 
 .name{
    font-size: xx-large;
-   background-color: black;
+   background-color: rgb(255, 232, 232);
+   text-align:center;
+   text-indent:40%;
+   margin: 30px 500px 30px -5px;
+   position: relative;
+   
 }
 
 #links{
     display: flex;
     padding:2%;
-    position:relative;
-    left: 400px;
+    margin-left: 30%;
 }
 
 #links a{
     flex-basis:auto;
     padding:4% 4% 4% 4% ;
+    color: darkcyan;
+    position: relative;
 }
 
 
 #my-work {
     display:flex;
     flex-wrap:wrap;
-
+    padding: 0%;
 }
 
 #my-work a{
-    flex-basis:50%;
     height: 100px;
+    padding: 50px 0px 30px 0px
 }
+
+#header{
+    color: darkcyan;
+    margin-top: 460px;
+    margin-right: 1200px;
+    padding: 2px 20px .6px 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: lightpink;
+   
+}
+
+#horiseon{
+    height:400px;
+    width:100%;
+    margin-bottom:25px;
+    background-image: url(./imgs/sunset-1373171__480.jpg);
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    border: solid black 4px;
+}
+
 
 #my-work a:first-child{
     flex-basis:100%;
-    height:200px;
+    height: 600px;
+    
 }
+
+#work{
+    border: solid black;
+    margin:15px 15px 5px 0px;
+    padding: 25px 0 20px 0 ;
+    background-image:url(./imgs/hd-wallpaper-gc945d1388_1920.jpg);
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#pre{
+    background-color: lightpink;
+    margin-top:37px;
+    margin-right: 337px;
+    text-align: right;
+}
+
+#project{
+    background-color: lightpink;
+    margin-top:37px;
+    margin-right:470px;
+    text-align: right;
+    padding-right: 1px;
+}
+
+#pre p {
+    padding:20px 14px 10px 0px
+}
+
+#project p {
+    padding:15px 30px 15px 0px
+}
+
 
 #contact {
     display:flex;
@@ -68,7 +179,7 @@ section nav {
 #contact a{
     flex-basis: 20%;
     text-align:center;
-    padding: 5% 0% 10% 0%;
+    padding: 5% 0% 0% 0%;
     color: darkcyan;
     
 }
